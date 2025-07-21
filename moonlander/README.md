@@ -1,0 +1,1 @@
+Most keyboards should already change their color with the hardware implementation. This only tries to send a color as raw hid to the moonlander keyboard. For this to work, you need the keyboard to actually do something with that hid. I have written firmware for [my layout](https://github.com/airberlin1/qmk_moonlander). This should be reasonably easy to adjust to your layout. 

@@ -1,0 +1,21 @@
+{
+    "colors": {
+        "AlternateBase": "%%%dark:rgba:opacity:0.8",
+        "Base": "%%%dark:rgba:opacity:0.75",
+        "BrightText": "#ff0000",
+        "Button": "#141414",
+        "ButtonText": "%%%light:hex%%%",
+        "Highlight": "#102e24",
+        "HighlightedText": "#ffffff",
+        "Link": "#2a82da",
+        "Text": "%%%light:hex%%%",
+        "ToolTipBase": "%%%light:hex%%%",
+        "ToolTipText": "%%%light:hex%%%",
+        "Window": "#0a0a0a",
+        "WindowText": "%%%light:hex%%%",
+        "fadeAmount": 0.5,
+        "fadeColor": "#31363b"
+    },
+    "name": "Dynamic Color",
+    "widgets": "Fusion"
+}
