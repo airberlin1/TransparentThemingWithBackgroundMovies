@@ -6,7 +6,7 @@ It is designed to work with hyprland, and adding support for dwm is planned. Som
 | betterdiscord | discord | [Website](https://betterdiscord.app/) | [Website](https://betterdiscord.app/) |
 | mpvpaper | background | [mpvpaper (AUR)](https://aur.archlinux.org/packages/mpvpaper) | [mpvpaper](https://voidlinux.pkgs.org/current/voidlinux-main-x86_64/mpvpaper-1.8_1.x86_64.xbps.html) |
 | openrgb | hardware | [openrgb](https://archlinux.org/packages/extra/x86_64/openrgb/) | [openrgb](https://voidlinux.pkgs.org/current/voidlinux-main-aarch64/openrgb-0.9_5.aarch64.xbps.htmlxs) |
-| jq | kitty, zathura | [jq](https://archlinux.org/packages/extra/x86_64/jq/) | [ja](https://voidlinux.pkgs.org/current/voidlinux-main-aarch64/jq-1.8.1_1.aarch64.xbps.html) | 
+| jq | kitty, zathura | [jq](https://archlinux.org/packages/extra/x86_64/jq/) | [jq](https://voidlinux.pkgs.org/current/voidlinux-main-aarch64/jq-1.8.1_1.aarch64.xbps.html) | 
 | python-hid | moonlander | [python-hid](https://archlinux.org/packages/extra/any/python-hid/) | [python3-hid](https://voidlinux.pkgs.org/current/voidlinux-main-aarch64/python3-hid-1.0.4_4.aarch64.xbps.html) |
 
 
