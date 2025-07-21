@@ -11,7 +11,7 @@ It is designed to work with hyprland, and adding support for dwm is planned. Som
 
 
 # Setup
-First, change the value of `THEMING_DIR` in `apply_theme.sh` and `load_theme.py` to the directory of this git repository.
+First, change the value of `THEMING_DIR` in `apply_theme.sh` and `load_theme.py`, and optionally also in `cycle_theme.py` and `random_theme.py`, if you want to use them, to the directory of this git repository.
 
 Then adapt `theming.conf.d/general.conf` to your needs. You will have the option of setting the following values:
 
