@@ -28,7 +28,7 @@ Currently my config for theming looks like this:
 (defvar my:theme my:default-theme)
 (defvar my:theme-window-loaded nil)
 (defvar my:theme-terminal-loaded nil)
-(start-process "rand_theme" nil "nohup" "/home/air_berlin/Theme/random_theme.py" "1" "&")
+(start-process "rand_theme" nil "nohup" "<insert_theming_directory_here>/random_theme.py" "1" "&")
 ;; some workaround for emacs --daemon being in terminal mode
 (if (daemonp)
     (add-hook 'after-make-frame-functions(lambda (frame)
