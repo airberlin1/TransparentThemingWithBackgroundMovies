@@ -11,6 +11,11 @@ if [[ $wm = "hyprland" ]]; then
         fi
     done
 elif [[ $wm = "dwm" ]]; then
-    # something xdotool send F5 everywhere
-    echo ""
+    pids=$(pgrep kitty)
+    for pid in $pids; do
+        wm_line="$(wmctrl -l -p -G | grep $pid)"
+        zathura_window=$(echo "$wm_line" | awk '{print $1;}')
+        xdotool windowactivate "$zathura_window"
+        xdotool key --clearmodifiers Control+Shift+F5
+    done
 fi

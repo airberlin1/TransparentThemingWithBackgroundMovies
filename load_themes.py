@@ -8,7 +8,7 @@ import os
 import re
 import colorsys
 
-THEMING_DIR = f"{os.environ["HOME"]}/ThemingForHyprland"
+THEMING_DIR = f"{os.environ["HOME"]}/TransparentThemingWithBackgroundMovies"
 
 color_formats={
     "rgba": lambda r, g, b, op : f"rgba({r}, {g}, {b}, {op})",

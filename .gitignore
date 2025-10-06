@@ -5,3 +5,15 @@ discord/configs/discord_plus
 
 # generated theme files
 *[-]*
+
+theming.conf.d/
+themes/
+
+# these might have to be forced if changes are necessary
+apply_theme.sh
+
+cycle_theme.py
+
+load_themes.py
+
+random_theme.py

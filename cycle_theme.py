@@ -4,7 +4,7 @@
 from subprocess import call
 import os
 
-THEMING_DIR = f"{os.environ["HOME"]}/ThemingForHyprland"
+THEMING_DIR = f"{os.environ["HOME"]}/TransparentThemingWithBackgroundMovies"
 
 
 themes = []
