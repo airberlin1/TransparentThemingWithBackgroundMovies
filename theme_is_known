@@ -1,0 +1,14 @@
+#!/bin/bash
+
+THEMING_DIR="$HOME/ThemingForHyprland"
+
+theme="$1"
+
+for t in $(cat $THEMING_DIR/loaded_themes)
+do
+    if [[ "$theme" == "$t" ]]; then
+        echo 1
+        exit
+    fi
+done
+echo 0

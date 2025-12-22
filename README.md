@@ -17,7 +17,7 @@ Then adapt `theming.conf.d/general.conf` to your needs. You will have the option
 
 | Setting | Permitted Values | Example | Description | 
 | --------| --------- | -------- | -------- |
-| window_manager | hyprland | hyprland | The window manager or desktop environment used |
+| window_manager | hyprland,dwm | hyprland | The window manager or desktop environment used |
 | displays | Comma Seperated List of Display Identifiers | DP-2,HDMI-A-3 | What displays are connected, and in what other are they to be considered? |
 | movie_base_dir | any full path, should not have trailing / | /home/example/movies | path to a directory so that specified movies will be a relative path starting from here |
 
@@ -54,3 +54,7 @@ Add the name of the app to `theming.conf.d/configured_apps.conf`. Then create a 
 
 If you want, you can add a readme in the folder so that you can later understand what you did.
 
+## Some notes on emacs
+
+Emacs is really unhappy with some themes on startup. This issue seems to occur when a theme change on emacs is called shortly after emacs --daemon, but just adding a time buffer does not work. If emacs --daemon has worked correctly, there should be two pids for emacs. In case of a faulty start, there is only one. It can be fixed by killing the one emacs process and running emacs --daemon again. On hyprland, it can be beneficial to start a graphical emacsclient instance, but trying this on dwm killed all my keyboard shortcuts.
+As some themes work fine and the workaround works good enough for what I want to do, I currently don't plan on investigating this further.

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-THEMING_DIR="$HOME/ThemingForHyprland"
+THEMING_DIR="$HOME/TransparentThemingWithBackgroundMovies"
 
 if [[ $1 = "from_server" ]]; then
     theme="$(curl https://lassesperling.de/theming/gmrorseno64/)"
@@ -15,9 +15,12 @@ fi
 
 configured_apps="$(cat "$THEMING_DIR/theming.conf.d/configured_apps.conf")"
 
+active_window=$(xdotool getactivewindow)
 
 for app_to_be_themed in $configured_apps; do
     $THEMING_DIR/$app_to_be_themed/main.sh "$theme" "$THEMING_DIR"
 done
 
 echo $theme > $THEMING_DIR/current_theme
+
+xdotool windowactivate "$active_window"

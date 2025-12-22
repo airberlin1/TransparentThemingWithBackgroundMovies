@@ -30,6 +30,12 @@ if [[ $wm = "hyprland" ]]; then
     done
     kill $mpv_pids
 elif [[ $wm = "dwm" ]]; then
-    # maybe use https://github.com/glouw/paperview
-    echo ""
+    fname="$("$2/get_general_config.py" movie_base_dir "$2")/$movie_list"
+    # also allow pictures instead of movies
+    if [[ ${fname##*\.} = jpg ]] || [[ ${fname##*\.} = png ]] || [[ ${fname##*\.} = jpeg ]]; then
+        # TODO remember to close videos even when setting picture as background
+        feh --bg-scale "$fname"
+    else
+        echo ""
+    fi
 fi
