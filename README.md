@@ -1,4 +1,4 @@
-# Dependicies
+# Dependencies
 There are no hard dependencies other than bash and python3 for the general theming program.
 It is designed to work with hyprland, and adding support for dwm is planned. Some app configurations will not work on other platforms. There are also some dependencies for pre-configured apps, apart from the app itself:
 | Dependency | Used For | Get it on Arch | Get in on Void |
