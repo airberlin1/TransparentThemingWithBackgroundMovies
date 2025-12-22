@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THEMING_DIR="$HOME/ThemingForHyprland"
+THEMING_DIR="$HOME/TransparentThemingWithBackgroundMovies"
 
 theme="$1"
 
