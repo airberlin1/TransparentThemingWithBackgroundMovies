@@ -6,8 +6,8 @@ discord/configs/discord_plus
 # generated theme files
 *[-]*
 
-theming.conf.d/
-themes/
+theming.conf.d/*
+themes/*
 
 # these might have to be forced if changes are necessary
 apply_theme.sh
