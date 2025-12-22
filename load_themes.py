@@ -29,7 +29,7 @@ color_formats={
 def to_hex(col_val):
     if "." in str(col_val):
         col_val = float(col_val) * 255
-    return hex(int(col_val))[2:]
+    return hex(int(col_val))[2:].zfill(2)
 
 
 def read_theme(theme_name):

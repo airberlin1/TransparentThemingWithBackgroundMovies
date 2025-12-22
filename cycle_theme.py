@@ -21,4 +21,4 @@ if curi == len(themes) - 1:
 else:
     i = curi + 1
 
-call([f"{THEMING_DIR}/apply_theme.sh", themes[i]])
+call(["ntfy", "publish", "theme54otaohdo46464oor", themes[i]])
