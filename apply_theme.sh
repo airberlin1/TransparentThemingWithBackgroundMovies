@@ -3,9 +3,15 @@
 
 THEMING_DIR="$HOME/ThemingForHyprland"
 
+if [[ $1 = "from_server" ]]; then
+    theme="$(curl https://lassesperling.de/theming/gmrorseno64/)"
+else
+    theme="$1"
+fi
 
-
-theme=$1
+if [[ $($THEMING_DIR/theme_is_known "$theme") = 0 ]]; then
+    exit -1
+fi
 
 configured_apps="$(cat "$THEMING_DIR/theming.conf.d/configured_apps.conf")"
 

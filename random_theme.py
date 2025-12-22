@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """applies a random theme"""
-from subprocess import run
+from subprocess import call
 import random
 import os
 from time import sleep
@@ -22,5 +22,6 @@ with open("/home/air_berlin/Theme/current_theme", "r") as fp:
 
 if len(argv) > 1:
     sleep(5)
-run(["/home/air_berlin/Theme/apply_theme.sh", random.choice(themes)])
+call(["ntfy", "publish", "theme54otaohdo46464oor", random.choice(themes)])
+
 #, stdout=open(os.devnull, 'wb'), stderr=open(os.devnull, 'wb'))
